@@ -1,34 +1,36 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
+import Menu from './Menu'
 import Wrapper from './Wrapper'
 import UsersList from './UsersList'
 import Home from './Home'
 import Login from './Login'
+import Counter from './Counter'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 const app = document.getElementById('app')
 
-const Menu = () => {
-    return (
-        <ul>
-            <li>
-                <Link to='/'>Home</Link>
-            </li>
-            <li>
-                <Link to='/about'>About us</Link>
-            </li>
-            <li>
-                <Link to='/contact'>Contact us</Link>
-            </li>
-            <li>
-                <Link to='/login'>Log in</Link>
-            </li>
-            <li>
-                <Link to='/user'>User</Link>
-            </li>
-        </ul>
-    )
-}
+// const Menu = () => {
+//     return (
+//         <ul>
+//             <li>
+//                 <Link to='/'>Home</Link>
+//             </li>
+//             <li>
+//                 <Link to='/about'>About us</Link>
+//             </li>
+//             <li>
+//                 <Link to='/contact'>Contact us</Link>
+//             </li>
+//             <li>
+//                 <Link to='/login'>Log in</Link>
+//             </li>
+//             <li>
+//                 <Link to='/user'>User</Link>
+//             </li>
+//         </ul>
+//     )
+// }
 
 const About = () => {
     return (<h1>Welcome to my about page!</h1>)
@@ -72,4 +74,6 @@ const Routes = () => {
     )
 } */
 
-ReactDOM.render(<Routes />, app)
+ReactDOM.render(<Counter />, app)
+
+

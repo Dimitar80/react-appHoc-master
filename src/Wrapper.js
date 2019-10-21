@@ -2,13 +2,15 @@ import React from 'react'
 import Error from './Error'
 import axios from 'axios'
 
+//axios and states//
+
 class Wrapper extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
             data: [],
             error: null,
-            loading: falsels
+            loading: false
         }
     }
 
